@@ -4,24 +4,24 @@ and use the Meraki PlugIn
 # Node-RED on MAC
 
 ## Install brew
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ## Install npm
-  brew install npm
+    brew install npm
 
 ## Install last stable Node.js
-  sudo npm cache clean -f
-  sudo npm install -g n
-  sudo n stable
+    sudo npm cache clean -f
+    sudo npm install -g n
+    sudo n stable
 
 
 ## Install Node-RED
-  sudo npm install -g --unsafe-perm node-red
+    sudo npm install -g --unsafe-perm node-red
 
 ## start stop Node-RED
-  start :        #node-red
-  open Browser:  http://localhost:1880
-  stop :         Ctrl+C 
+    start :        #node-red
+    open Browser:  http://localhost:1880
+    stop :         Ctrl+C 
 
 
 
