@@ -40,29 +40,32 @@ and use the Meraki PlugIn
     
     open Browser:    http://localhost:1880    or http://<IP>:1880
     
-    
+## configure autostart
+    sudo systemctl enable nodered.service
+    sudo systemctl disable nodered.service
     
 
 
 # Node-RED Palette's
 
 ## Install Meraki Palette
+
+npm install node-red-contrib-meraki-dashboard-api
+
 NodeRED GUI:
   Manage Palette > Installs > search meraki , install
-
-Latest Meraki Palette on Github
-  https://github.com/dexterlabora/node-red-contrib-meraki-dashboard-api
-  cd ~/.node-red
-  npm install git+https://github.com/dexterlabora/node-red-contrib-meraki-dashboard-api
+  (node-red-contrib-meraki-dashboard-api)
 
 
 ## Node-RED Links
 [Meraki_Node-RED_101]
+[Meraki_NodeRED_Palette]
 [NodeRED.org]
 
 
 
 
 [Meraki_Node-RED_101]: <https://developer.cisco.com/docs/meraki-dashboard-api-node-red-node/>
+[Meraki_NodeRED_Palette]: <https://github.com/dexterlabora/node-red-contrib-meraki-dashboard-api>
 [NodeRED.org]: <https://nodered.org/docs/getting-started/raspberrypi>
 
