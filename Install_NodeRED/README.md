@@ -18,6 +18,7 @@ and use the Meraki PlugIn
 ## Install Node-RED
     sudo npm install -g --unsafe-perm node-red
 
+
 ## start stop Node-RED
     start :        #node-red
     open Browser:  http://localhost:1880
@@ -26,31 +27,42 @@ and use the Meraki PlugIn
 
 
 # Node-RED on Raspberry
-
-
-
-# Node-RED on Debian
-
+    bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+    sudo apt-get install build-essential
+    
+## start stop Node-RED
+    start:           node-red-pi --max-old-space-size=256   (locally in terminal)
+    stop :           Ctrl+C     (locally)
+    
+    start service:   node-red-start     (as a background service)
+    restart service: node-red-restart 
+    stop:            node-red-stop
+    
+    open Browser:    http://localhost:1880    or http://<IP>:1880
+    
+    
+    
 
 
 # Node-RED Palette's
 
-## Meraki
+## Install Meraki Palette
+NodeRED GUI:
   Manage Palette > Installs > search meraki , install
+
+Latest Meraki Palette on Github
   https://github.com/dexterlabora/node-red-contrib-meraki-dashboard-api
   cd ~/.node-red
   npm install git+https://github.com/dexterlabora/node-red-contrib-meraki-dashboard-api
 
-## Dashboard
 
-
-# Node-RED Links
-  getting_started
-  Meraki_Node-RED_101    https://developer.cisco.com/docs/meraki-dashboard-api-node-red-node/
-
+## Node-RED Links
+[Meraki_Node-RED_101]
+[NodeRED.org]
 
 
 
 
-
+[Meraki_Node-RED_101]: <https://developer.cisco.com/docs/meraki-dashboard-api-node-red-node/>
+[NodeRED.org]: <https://nodered.org/docs/getting-started/raspberrypi>
 
