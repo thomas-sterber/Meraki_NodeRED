@@ -46,11 +46,19 @@ and use the Meraki PlugIn
     
 
 
-# Node-RED Palette's
+# Node-RED nodes
 
-## Install Meraki Palette
+## Install most important nodes
+    cd ~/node-red/
+    npm install node-red-dashboard
+    npm install node-red-node-base64
+    npm install node-red-node-random
+    npm install node-red-node-ui-table
+    npm install node-red-contrib-ui-media
 
-npm install node-red-contrib-meraki-dashboard-api
+## Install Meraki node
+
+    npm install node-red-contrib-meraki-dashboard-api
 
 NodeRED GUI:
   Manage Palette > Installs > search meraki , install
@@ -60,7 +68,7 @@ NodeRED GUI:
 ## Node-RED Links
 [Meraki_Node-RED_101]
 
-[Meraki_NodeRED_Palette]
+[Meraki_NodeRED_Node]
 
 [NodeRED.org]
 
@@ -68,6 +76,6 @@ NodeRED GUI:
 
 
 [Meraki_Node-RED_101]: <https://developer.cisco.com/docs/meraki-dashboard-api-node-red-node/>
-[Meraki_NodeRED_Palette]: <https://github.com/dexterlabora/node-red-contrib-meraki-dashboard-api>
+[Meraki_NodeRED_Node]: <https://github.com/dexterlabora/node-red-contrib-meraki-dashboard-api>
 [NodeRED.org]: <https://nodered.org/docs/getting-started/raspberrypi>
 
